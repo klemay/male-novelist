@@ -19,14 +19,14 @@ for (i = 0; i < colsArr.length; i++) {
     var randomNumber = Math.floor(Math.random() * 26);
     descriptorsArr.push(colsArr[i][randomNumber]);
 };
-//take words from descriptorsArr and replace placeholders  
+//take words from descriptorsArr and replace placeholders
     document.getElementById('placeholderA').innerHTML=descriptorsArr[0];
     document.getElementById('placeholderB').innerHTML=descriptorsArr[1];
     document.getElementById('placeholderC').innerHTML=descriptorsArr[2];
     document.getElementById('placeholderD').innerHTML=descriptorsArr[3];
     document.getElementById('placeholderE').innerHTML=descriptorsArr[4];
-  
+
     var newQuote = document.getElementById('description').innerText;
-    document.getElementById('tweetThis').setAttribute('href', 'https://twitter.com/intent/tweet?text=' + 'How a male author would describe me: ' + newQuote + ' ' + '(via the Male Author Description Generator: www.katelynlemay.com/male-novelist-description)');
+    document.getElementById('tweetThis').setAttribute('href', 'https://twitter.com/intent/tweet?text=' + 'How a male author would describe me: ' + newQuote + ' ' + '(via the Male Author Description Generator: www.katelynlemay.com/male-novelist)');
 
 };
